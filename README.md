@@ -8,3 +8,4 @@ What we are using in this application -
 3. Material Design 3
 4. Navigation with multiple backstack
 5. Paging 3 library
+6. Edge to edge feature
