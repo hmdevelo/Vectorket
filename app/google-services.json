@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "491477901812",
+    "project_id": "vectorket240304",
+    "storage_bucket": "vectorket240304.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491477901812:android:8d1b40668f9620fdd999a1",
+        "android_client_info": {
+          "package_name": "com.develo.vectorket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491477901812-p7qns45712lf5ubrah09761vcu4damgp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.develo.vectorket",
+            "certificate_hash": "909ac97fa765fb163df33c8f1c478d096cca5cec"
+          }
+        },
+        {
+          "client_id": "491477901812-hjfm8i7fjmtj10uai8cvepe6vneua4hd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH0Nt8ESZf_1RpFYNO6cr7-y9dIqTTfF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491477901812-hjfm8i7fjmtj10uai8cvepe6vneua4hd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

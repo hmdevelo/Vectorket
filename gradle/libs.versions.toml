@@ -1,0 +1,73 @@
+[versions]
+agp = "8.4.0"
+coreSplashscreen = "1.0.1"
+datastorePreferences = "1.0.0"
+kotlin = "1.9.22"
+coreKtx = "1.12.0"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+lifecycleRuntimeKtx = "2.7.0"
+activityCompose = "1.8.2"
+composeBom = "2024.03.00"
+ksp = "1.9.22-1.0.17"
+daggerHilt = "2.49"
+hiltCompiler = "1.2.0"
+coroutines = "1.7.3"
+googleServices = "4.4.1"
+media3Exoplayer = "1.3.0"
+pagingCompose = "3.2.1"
+playServicesAuth = "21.0.0"
+firebaseBom = "32.7.4"
+firebaseCrashlytics = "2.9.9"
+navigation = "2.7.7"
+coil = "2.6.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
+androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastorePreferences" }
+androidx-media3-exoplayer = { module = "androidx.media3:media3-exoplayer", version.ref = "media3Exoplayer" }
+androidx-media3-ui = { module = "androidx.media3:media3-ui", version.ref = "media3Exoplayer" }
+androidx-paging-compose = { module = "androidx.paging:paging-compose", version.ref = "pagingCompose" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation" }
+dagger-hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "daggerHilt" }
+dagger-hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "daggerHilt" }
+androidx-hilt-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "hiltCompiler" }
+androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltCompiler" }
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth" }
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore" }
+firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics" }
+google-play-services-auth = { group = "com.google.android.gms", name = "play-services-auth", version.ref = "playServicesAuth" }
+coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+
+[bundles]
+firebase = ["firebase-auth", "firebase-firestore", "firebase-crashlytics", "firebase-analytics"]
+kotlinx-coroutines = ["kotlinx-coroutines-core", "kotlinx-coroutines-android"]
+dagger-hilt = ["dagger-hilt", "androidx-hilt-navigation-compose"]
+dagger-hilt-compiler = ["dagger-hilt-android-compiler", "androidx-hilt-compiler"]
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+daggerHilt = { id = "com.google.dagger.hilt.android", version.ref = "daggerHilt" }
+googleServices = { id = "com.google.gms.google-services", version.ref = "googleServices" }
+firebaseCrashlytics = { id = "com.google.firebase.crashlytics", version.ref = "firebaseCrashlytics" }
